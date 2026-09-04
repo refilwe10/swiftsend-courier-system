@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Driver App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="../customer/login.html" class="role-btn" style="background:var(--accent);border-color:var(--accent);">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title text-center">Driver Mobile App</h2>
+        <p class="text-center text-muted mb-3">Simulated mobile interface for drivers (designed to run on a real Android device)</p>
+
+        <div class="mobile-frame">
+            <div class="mobile-screen">
+                <div class="mobile-header">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <strong>SwiftSend Driver</strong>
+                        <span style="font-size:0.85rem;">Sipho M. • Online</span>
+                    </div>
+                </div>
+                <div class="mobile-content">
+                    <h3 class="mb-2">Assigned Deliveries</h3>
+
+                    <div class="delivery-card">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+                            <strong>SS-123456</strong>
+                            <span class="status status-picked">Picked Up</span>
+                        </div>
+                        <p style="font-size:0.9rem;">Pickup: Sandton → Rosebank</p>
+                        <p style="font-size:0.85rem; color:#64748b;">Customer: John Doe • 082 555 1234</p>
+                        <div class="flex mt-2">
+                            <button class="btn btn-sm btn-primary" onclick="updateDriverStatus('SS-123456','In Transit')">In Transit</button>
+                            <button class="btn btn-sm btn-success" onclick="updateDriverStatus('SS-123456','Delivered')">Delivered</button>
+                        </div>
+                    </div>
+
+                    <div class="delivery-card">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+                            <strong>SS-123457</strong>
+                            <span class="status status-pending">Pending</span>
+                        </div>
+                        <p style="font-size:0.9rem;">Pickup: Midrand → Fourways</p>
+                        <p style="font-size:0.85rem; color:#64748b;">Customer: Sarah N. • 083 555 9876</p>
+                        <div class="flex mt-2">
+                            <button class="btn btn-sm btn-accent" onclick="updateDriverStatus('SS-123457','Picked Up')">Mark Picked Up</button>
+                        </div>
+                    </div>
+
+                    <div class="delivery-card">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+                            <strong>SS-123458</strong>
+                            <span class="status status-transit">In Transit</span>
+                        </div>
+                        <p style="font-size:0.9rem;">Pickup: Bryanston → Sandton</p>
+                        <button class="btn btn-sm btn-success mt-2" onclick="updateDriverStatus('SS-123458','Delivered')">Confirm Delivery + POD</button>
+                    </div>
+
+                    <div style="margin-top:1.5rem; text-align:center;">
+                        <button class="btn btn-outline btn-sm" onclick="alert('Settings: Change password, notification preferences, SSO linked.')">⚙️ Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

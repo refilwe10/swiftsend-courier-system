@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Driver Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="../customer/login.html" class="role-btn" style="background:var(--accent);border-color:var(--accent);">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title"> Driver Management</h2>
+        <button class="btn btn-primary mb-2" onclick="alert('Add new driver form would open here.')">+ Add Driver</button>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Phone</th><th>Vehicle</th><th>Status</th><th>Actions</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>D001</td><td>Sipho Mokoena</td><td>082 111 2233</td><td>CA 123-456</td><td><span class="status status-delivered">Available</span></td><td><button class="btn btn-sm btn-outline">Edit</button></td></tr>
+                    <tr><td>D002</td><td>Lerato Dlamini</td><td>083 222 3344</td><td>GP 987-654</td><td><span class="status status-transit">On Route</span></td><td><button class="btn btn-sm btn-outline">Edit</button></td></tr>
+                    <tr><td>D003</td><td>Johan Pretorius</td><td>071 333 4455</td><td>FS 456-789</td><td><span class="status status-delivered">Available</span></td><td><button class="btn btn-sm btn-outline">Edit</button></td></tr>
+                    <tr><td>D004</td><td>Nomsa Khumalo</td><td>084 444 5566</td><td>NW 321-987</td><td><span class="status status-pending">Offline</span></td><td><button class="btn btn-sm btn-outline">Edit</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="dashboard.html" class="btn btn-outline mt-2">← Back to Dashboard</a>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

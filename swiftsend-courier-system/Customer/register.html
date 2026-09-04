@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="login.html" class="role-btn">Login</a>
+                <a href="register.html" class="role-btn primary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Customer Registration</h2>
+        <div class="card max-w-500">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="reg-name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="reg-email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" id="reg-phone" placeholder="+27 82 123 4567">
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" id="reg-address" placeholder="123 Main St, Sandton">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="reg-password" placeholder="Create a strong password">
+            </div>
+            <button class="btn btn-primary w-full" onclick="registerCustomer()">Create Account</button>
+            <p class="text-center mt-2 text-muted">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

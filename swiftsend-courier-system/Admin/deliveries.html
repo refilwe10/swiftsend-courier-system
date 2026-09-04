@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Delivery Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="../customer/login.html" class="role-btn" style="background:var(--accent);border-color:var(--accent);">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title"> Delivery Management</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Tracking</th><th>Customer</th><th>Driver</th><th>Status</th><th>Assign / Action</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SS-123454</td>
+                        <td>Lisa van Wyk</td>
+                        <td>—</td>
+                        <td><span class="status status-pending">Pending</span></td>
+                        <td>
+                            <select style="width:auto; padding:0.3rem;">
+                                <option>Select Driver</option>
+                                <option>Sipho M.</option>
+                                <option>Lerato D.</option>
+                                <option>Johan P.</option>
+                            </select>
+                            <button class="btn btn-sm btn-accent" onclick="assignDelivery()">Assign</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SS-123456</td>
+                        <td>John Doe</td>
+                        <td>Sipho M.</td>
+                        <td><span class="status status-transit">In Transit</span></td>
+                        <td><button class="btn btn-sm btn-outline">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>SS-123457</td>
+                        <td>Sarah Ndlovu</td>
+                        <td>Lerato D.</td>
+                        <td><span class="status status-picked">Picked Up</span></td>
+                        <td><button class="btn btn-sm btn-outline">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="dashboard.html" class="btn btn-outline mt-2">← Back to Dashboard</a>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Book Delivery</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="login.html" class="role-btn" style="background:var(--accent);border-color:var(--accent);">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Book a Delivery</h2>
+        <div class="card max-w-560">
+            <div class="form-group">
+                <label>Pickup Address</label>
+                <input type="text" id="pickup" value="123 Main Road, Sandton, Johannesburg">
+            </div>
+            <div class="form-group">
+                <label>Delivery Address</label>
+                <input type="text" id="delivery" value="45 Oxford Road, Rosebank, Johannesburg">
+            </div>
+            <div class="form-group">
+                <label>Parcel Description</label>
+                <textarea id="parcel-desc" rows="2">Electronics – Laptop (fragile)</textarea>
+            </div>
+            <div class="form-group">
+                <label>Estimated Weight (kg)</label>
+                <input type="number" value="2.5" min="0.1" step="0.1">
+            </div>
+            <div class="form-group">
+                <label>Preferred Date</label>
+                <input type="date" value="2026-09-05">
+            </div>
+            <button class="btn btn-primary w-full" onclick="submitBooking()">Submit Booking</button>
+            <p class="text-center mt-2"><a href="dashboard.html">← Back to Dashboard</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

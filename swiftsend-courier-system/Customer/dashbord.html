@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSend Couriers – Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Swift<span>Send</span></a>
+
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../services.html" class="nav-link">Services</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="role-btns">
+                <a href="login.html" class="role-btn" style="background:var(--accent);border-color:var(--accent);">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Customer Dashboard</h2>
+        <div class="alert alert-success">Welcome back! You are logged in as a customer.</div>
+
+        <div class="card-grid mb-3">
+            <div class="card" style="cursor:pointer;">
+                <a href="book-delivery.html" style="text-decoration:none;color:inherit;">
+                    <h3>📦 Book Delivery</h3>
+                    <p>Create a new delivery request online.</p>
+                </a>
+            </div>
+            <div class="card" style="cursor:pointer;">
+                <a href="track-delivery.html" style="text-decoration:none;color:inherit;">
+                    <h3>📍 Track Parcel</h3>
+                    <p>View real-time status of your deliveries.</p>
+                </a>
+            </div>
+            <div class="card" style="cursor:pointer;">
+                <a href="notifications.html" style="text-decoration:none;color:inherit;">
+                    <h3>🔔 Notifications</h3>
+                    <p>See delivery updates and alerts.</p>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="mb-2">My Recent Deliveries</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tracking #</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SS-123456</td>
+                        <td>Sandton</td>
+                        <td>Rosebank</td>
+                        <td><span class="status status-transit">In Transit</span></td>
+                        <td>2026-09-03</td>
+                    </tr>
+                    <tr>
+                        <td>SS-123455</td>
+                        <td>Midrand</td>
+                        <td>Sandton</td>
+                        <td><span class="status status-delivered">Delivered</span></td>
+                        <td>2026-09-01</td>
+                    </tr>
+                    <tr>
+                        <td>SS-123454</td>
+                        <td>Fourways</td>
+                        <td>Bryanston</td>
+                        <td><span class="status status-pending">Pending</span></td>
+                        <td>2026-09-04</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>SwiftSend Couriers</strong> – Courier Management System</p>
+        <p>Developed by High Rollers (Refilwe Phore ST10458818 & Ntembeko Ndayi ST10180342)</p>
+        <p>XISD5319 | Work Integrated Learning | 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
